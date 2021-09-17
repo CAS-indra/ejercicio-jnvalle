@@ -1,0 +1,10 @@
+<h1>Numero de Transacciones: {{ count }} </h1>
+
+<div *ngFor="let tr of transacciones">
+  <div (click)="incremento(); suma(tr.amount, tr.kind)" class="card">
+    <h2> {{ tr.name }} </h2>
+    <p> {{ tr.description }} </p>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="balance">Balance: <span [ngClass]="{'positive': result > 0, 'negative': result < 0}">{{ result }}</span></div>

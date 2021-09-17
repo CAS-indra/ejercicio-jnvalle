@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CabeceraComponent implements OnInit {
   public empresa = 'indra';
+  public practica = 'Practica Angular'
   constructor() { }
 
   ngOnInit(): void {
