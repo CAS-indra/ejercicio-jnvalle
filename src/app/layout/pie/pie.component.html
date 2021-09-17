@@ -1,4 +1,5 @@
 <footer>
-  <div>Creado por {{ desarrollador | uppercase }}</div>
-  <div>El {{ fecha | date: 'dd-MMM-yyy' }}</div>
+  <div class="br-line"></div>
+  <div [ngClass]="'space'">Creado por {{ desarrollador | uppercase }}</div>
+  <div [ngClass]="'space-1'">El {{ fecha | date: 'dd-MMM-yyy' }}</div>
 </footer>

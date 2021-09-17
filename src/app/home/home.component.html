@@ -1,0 +1,20 @@
+<h1>Numero de Transacciones: {{ count }} </h1>
+
+<div *ngFor="let tr of transacciones">
+  <button (click)="incremento(); suma(tr.amount, tr.kind)" [ngClass]="{'spent': tr.kind==='spent', 'income': tr.kind==='income'}" class="card">
+    <h2> {{ tr.name }} </h2>
+    <p> {{ tr.description }} </p>
+    <p> {{ tr.amount }}€</p>
+  </button>
+</div>
+
+<div class="clear"></div>
+
+<div class="balance">
+  Balance:
+  <span [ngClass]="{'positive': result > 0, 'negative': result < 0}">{{ result }}</span>
+  <span *ngIf="result > 0"> 👍🏼 </span>
+  <span *ngIf="result < 0"> 👎🏼 </span>
+</div>
+
+

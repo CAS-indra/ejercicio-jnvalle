@@ -1,0 +1,36 @@
+.card{
+  width: 350px;
+  height: auto;
+  float: left;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.positive {
+  color: green;
+  font-weight: 800;
+}
+
+.negative {
+  color: red;
+  font-weight: 800;
+}
+
+.income {
+  border: 1px solid green;
+}
+
+.spent {
+  border: 1px solid red;
+}
+
+.clear{
+  clear: both;
+}
+
+.balance{
+  margin: 10px;
+  font-weight: bold;
+}

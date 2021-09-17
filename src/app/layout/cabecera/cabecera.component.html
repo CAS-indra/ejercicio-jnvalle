@@ -1,4 +1,37 @@
 <header>
-  <h1>{{ practica | uppercase }}</h1>
+
+  <div [ngClass]="'lf-item'">
+    <div>
+      <img [ngClass]="'logo'" src="https://res.cloudinary.com/practicaldev/image/fetch/s--DYfpZirq--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/990/1%2AOc2PsJ-QKOUG2I8J3HNmWQ.png">
+    </div>
+    <div>{{ empresa }}</div>
+  </div>
+  <div [ngClass]="'rg-item'">
+    <div>{{ practica }}</div>
+  </div>
+
+  <div class="clear"></div>
+
+  <nav>
+    <a [ngClass]="'home'" routerLink="home">
+      Home
+    </a>
+    <a routerLink="contacto">
+      Contacto
+    </a>
+    <a routerLink="about">
+      About
+    </a>
+    <a routerLink="transaction">
+      Transaction
+    </a>
+    <a routerLink="auth/login">
+      Login
+    </a>
+  </nav>
+
+  <div class="clear"></div>
+
+
 </header>
 

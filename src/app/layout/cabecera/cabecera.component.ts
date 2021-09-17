@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cabecera.component.scss']
 })
 export class CabeceraComponent implements OnInit {
-  public empresa = 'indra';
-  public practica = 'Practica Angular'
+  public empresa = 'CAS-indra';
+  public practica = 'Practica Javier Navarro del Valle'
   constructor() { }
 
   ngOnInit(): void {

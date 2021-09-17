@@ -1,0 +1,45 @@
+
+header{
+  background-color: grey;
+}
+
+.clear{
+  clear: both;
+}
+
+.logo{
+  height: 80px;
+}
+
+.lf-item {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.rg-item {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+nav{
+  padding: 20px 10px;
+  text-decoration: none;
+
+}
+
+nav > a {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+nav > a:hover {
+  color: rgb(77, 77, 77);
+}
+
+.home{
+  background-color: silver;
+}
