@@ -12,22 +12,49 @@
 
   <div class="clear"></div>
 
-  <nav>
-    <a [ngClass]="'home'" routerLink="home">
-      Home
-    </a>
-    <a routerLink="contacto">
-      Contacto
-    </a>
-    <a routerLink="about">
-      About
-    </a>
-    <a routerLink="transaction">
-      Transaction
-    </a>
-    <a routerLink="auth/login">
-      Login
-    </a>
+  <nav [ngClass]="'navbar navbar-dark bg-primary'">
+    <div [ngClass]="'container-fluid'">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="projects/new"> ➕ Nuevo Proyecto</a>
+          </li>
+        </ul>
+      </div>
+      <a class="nav-link active" aria-current="page" routerLink="projects/new"> ➕ Nuevo Proyecto</a>
+
+      <!-- <a [ngClass]="'home navbar-brand'" routerLink="home">
+        Home
+      </a>
+      <a [ngClass]="'navbar-brand'" routerLink="contacto">
+        Contacto
+      </a>
+      <a [ngClass]="'navbar-brand'" routerLink="about">
+        About
+      </a>
+      <a [ngClass]="'navbar-brand'" routerLink="transaction/new">
+        Transaction
+      </a>
+      <a [ngClass]="'home navbar-brand'" routerLink="auth/login">
+        Login
+      </a> -->
+    </div>
+
   </nav>
 
   <div class="clear"></div>

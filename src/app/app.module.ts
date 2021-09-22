@@ -6,10 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { LayoutModule } from './layout/layout.module';
 import { BodyComponent } from './body/body.component';
 import { TransaccionesModule } from './transacciones/transacciones.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, BodyComponent],
-  imports: [BrowserModule, AppRoutingModule, LayoutModule, TransaccionesModule],
+  imports: [BrowserModule, AppRoutingModule, LayoutModule, TransaccionesModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
 })
