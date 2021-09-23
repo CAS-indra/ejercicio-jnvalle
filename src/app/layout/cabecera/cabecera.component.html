@@ -13,7 +13,7 @@
   <div class="clear"></div>
 
   <nav [ngClass]="'navbar navbar-dark bg-primary'">
-    <div [ngClass]="'container-fluid'">
+    <div [ngClass]="''">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -36,7 +36,14 @@
           </li>
         </ul>
       </div>
-      <a class="nav-link active" aria-current="page" routerLink="projects/new"> ➕ Nuevo Proyecto</a>
+
+      <a class="nav-link active text-white float-start" routerLink="home"> Home</a>
+      <a class="nav-link active text-white float-start" routerLink="about"> About</a>
+      <a class="nav-link active text-white float-start" routerLink="transaction/new"> Transacción</a>
+      <a class="nav-link active text-white float-start" routerLink="auth/login"> Login</a>
+
+      <a class="nav-link active text-white float-start" routerLink="contacto"> Contacto</a>
+      <a class="nav-link active  text-white  float-start" routerLink="projects/new"> ➕ Nuevo Proyecto</a>
 
       <!-- <a [ngClass]="'home navbar-brand'" routerLink="home">
         Home
